@@ -261,3 +261,72 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+
+/* Base styles for the section */
+.section.iphone-text {
+  padding: 20px;
+  
+
+
+/* Style for the default content wrapper */
+>.default-content-wrapper {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+/* Style for headings and paragraphs */
+>.default-content-wrapper h2 {
+  font-size: 24px;
+  font-family: "San Francisco", sans-serif;
+  margin-bottom: 10px;
+}
+
+>.default-content-wrapper p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Style for unordered lists */
+>.default-content-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Default for smaller screens */
+  gap: 10px; 
+}
+
+>.default-content-wrapper li {
+  margin-bottom: 8px;
+}
+
+}
+/* For smaller screens */
+@media (max-width: 767px) {
+  .section.iphone-text {
+  >.default-content-wrapper ul {
+      flex-direction: column;
+  }
+
+  >.default-content-wrapper ul:nth-of-type(2),
+  >.default-content-wrapper ul:nth-of-type(3) {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+}
+/* For larger screens */
+@media (min-width: 768px) {
+  .section.iphone-text {
+  >.default-content-wrapper ul {
+    flex-direction: column; /* Ensure all lists are in one row on larger screens */
+    flex-wrap: wrap;
+  }
+  >.default-content-wrapper ul:nth-of-type(2),
+  >.default-content-wrapper ul:nth-of-type(3) {
+      flex-direction: column;
+     
+  }
+}}

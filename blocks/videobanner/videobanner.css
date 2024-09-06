@@ -1,11 +1,12 @@
 .section.videobanner-container>.default-content-wrapper{
     >h2{
         font-size: 50px;
+        font-family:"San Francisco", sans-serif; 
     }
     >h3{
         font-size: 20px;    
         margin-top:-8px;
-        font-family:"San Francisco", sans-serif; ;
+        font-family:"San Francisco", sans-serif; 
     }
 }
   .play-pause {

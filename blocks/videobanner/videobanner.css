@@ -1,13 +1,15 @@
 .section.videobanner-container>.default-content-wrapper{
     >h2{
         font-size: 50px;
+        font-family:"San Francisco", sans-serif; 
     }
     >h3{
         font-size: 20px;    
         margin-top:-8px;
-        font-family:"San Francisco", sans-serif; ;
+        font-family:"San Francisco", sans-serif; 
     }
 }
+
   .play-pause {
     position: absolute;
     bottom: 10px;
@@ -41,6 +43,16 @@
       .videobanner-wrapper video{
       max-height: 100vh;
       } 
+      .section.videobanner-container>.default-content-wrapper{
+        display:flex;
+     }
+     .section.videobanner-container>.default-content-wrapper>h3{    
+        margin: 0;
+        position: relative;
+        margin-left: auto;
+        margin-top: 70px;
+     }
+
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     .videobanner-wrapper {

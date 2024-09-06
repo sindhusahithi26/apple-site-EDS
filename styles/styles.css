@@ -372,3 +372,15 @@ main .section.highlight {
     font-size: 14px;  
   }
 }
+/*notification-text section */
+.section.notification-text{
+  background-color: rgb(246, 246, 246);
+  >.default-content-wrapper{
+    text-align: center;
+    >p{
+      font-size: 13px;
+    }
+    
+  }
+
+}

@@ -1,9 +1,5 @@
 .cards-container > .default-content-wrapper {
-  h2 {
-      font-size: 27px;
-      font-family: "San Francisco", sans-serif;
-     
-  }
+
   a {
     background-color: transparent;
     color: #0066cc;
@@ -44,7 +40,7 @@
 }
 .prev,
 .next {
-  /* padding: 5px  !important; */
+  
   border-radius: 50%;
   font-size: 30px;
 
@@ -56,16 +52,12 @@
   padding: 0 !important;
   font-weight: bold;
   min-height: 30px;
-  /* margin:0 !important; */
+  
   background-color: rgba(227, 227, 227, 0.815);
 }
 .prev:focus,
 .next:focus {
-  /* padding: 5px  !important; */
-
   color: black;
-
-  /* margin:0 !important; */
   background-color: rgba(227, 227, 227, 0.815);
 }
 .cards h3 {
@@ -104,7 +96,12 @@
 .cards .cards-card-body {
   padding: 10px 30px 20px 30px;
 }
-
+@media(max-width:768px){
+  
+.cards-card-image>p:first-child {
+  display: none;
+}
+}
 @media (min-width: 720px) {
   .navigation-buttons {
     display: none;
@@ -112,12 +109,15 @@
   .cards > ul > li {
     min-width: 40% !important;
   }
-
-  .cards > ul > li img {
-    transform: scale(1.32);
-    height: 100%;
-    object-fit: contain;
-  }
+  .cards-container > .default-content-wrapper {
+    h2 {
+        font-size: 50px;
+        font-family: "San Francisco", sans-serif;
+       
+    }}
+  .cards-card-image>p:last-child {
+    display: none;
+}
 
   .cards .cards-card-body {
     padding: 20px 30px 30px 30px;
@@ -133,3 +133,5 @@
     padding: 0 40px;
   }
 }
+
+

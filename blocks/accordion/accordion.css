@@ -1,0 +1,148 @@
+
+.accordion-container > .default-content-wrapper {
+        h2 {
+            margin: 100px 0 30px 8px;
+        }
+    }
+
+
+.accordion details summary {
+    position: relative;
+    padding-right: 48px;
+    cursor: pointer;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  
+  
+  .accordion details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .accordion .accordion-item:nth-child(1),
+  .accordion .accordion-item:nth-child(2) {
+    border-bottom: 1px solid #d7d7de;
+  }
+  .accordion details summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    color: rgb(130, 130, 130);
+    right: 5px;
+    transform: translateY(-50%) rotate(135deg);
+    width: 9px;
+    height: 9px;
+    border: 2px solid;
+    border-width: 2px 2px 0 0;
+    transition: transform 0.2s;
+  }
+  
+  .accordion details[open] summary::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .accordion details[open] {
+    pointer-events: none;
+  }
+  
+  .accordion-wrapper {
+    padding: 30px !important;
+    background-color: #f5f5f7;
+    margin: 0 20px !important;
+    border-radius: 40px;
+  }
+  
+  .accordion summary h3 {
+    font-size: 21px !important;
+    font-family: "sf pro regular";
+  }
+  .accordion-item-body p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: "sf pro regular";
+    font-weight: normal;
+    color: #000000c1;
+  }
+  .accordion-item-body picture {
+    min-width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .accordion-item-body p {
+    margin: 20px !important;
+  }
+  .accordion-item-body p img {
+    min-width: 60vw;
+  
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 720px) {
+    .accordion-container>.default-content-wrapper {
+        h2 {
+            font-size: 50px;
+            font-family: "San Francisco", sans-serif;
+            padding-top: 20px;
+           
+        }}
+    .accordion .accordion-item {
+      max-width: 27vw;
+    }
+    .accordion-wrapper {
+      padding: 150px 80px !important;
+      margin: 0 60px !important;
+      overflow: hidden;
+    }
+    .accordion {
+      display: flex;
+      flex-direction: column;
+  
+      position: relative;
+    }
+    .accordion .accordion-item:nth-child(1) img {
+      transform: translateX(250px) scale(1.5);
+    }
+    .accordion .accordion-item h3 {
+      font-size: 24px !important;
+    }
+    .accordion .accordion-item:nth-child(2) h3 {
+      max-width: 50%;
+    }
+    .accordion-item-body p {
+      margin: 20px 0px !important;
+      font-size: 16px;
+      
+    }
+    .accordion-item-body {
+      display: flex;
+  
+      flex-direction: row !important;
+      max-width: 23vw;
+    }
+    .accordion-item summary {
+      max-width: 100%;
+    }
+    .accordion-item-body picture {
+      min-width: 0vw !important;
+      display: none;
+    }
+    .accordion-item-body p img {
+      position: absolute;
+      right: 0;
+      bottom: -110px;
+      min-height: 80vh;
+      min-width: 50vw !important;
+      object-fit: contain;
+      max-width: 50vw;
+      max-height: 100%;
+    }
+    .accordion summary[open] + .accordion-item-body p picture {
+      display: block;
+    }
+  }
+  
+      
+      

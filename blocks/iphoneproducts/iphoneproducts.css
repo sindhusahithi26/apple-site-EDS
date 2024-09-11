@@ -16,8 +16,11 @@
   font-family: "sf pro regular", sans-serif; 
   font-weight: normal;
   scroll-behavior: smooth; 
+  -webkit-overflow-scrolling: touch;
 }
-
+.iphoneproducts::-webkit-scrollbar {
+  display: none; 
+}
 .iphoneproducts div img {
   width: 56px;
   height: 56px; 

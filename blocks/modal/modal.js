@@ -1,9 +1,7 @@
 import { loadFragment } from '../fragment/fragment.js';
 import {
-  buildBlock, decorateBlock, loadBlock, loadCSS
+  buildBlock, decorateBlock, loadBlock, loadCSS,
 } from '../../scripts/aem.js';
-import {
-  autolinkModals } from '../../scripts/scripts.js';
 
 /*
   This is not a traditional block, so there is no decorate function.
@@ -31,7 +29,7 @@ export async function createModal(contentNodes) {
   document.querySelector('main').append(block);
   decorateBlock(block);
   await loadBlock(block);
-  autolinkModals(block);
+
   // close on click outside the dialog
   dialog.addEventListener('click', (e) => {
     const {

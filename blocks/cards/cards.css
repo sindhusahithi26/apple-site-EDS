@@ -1,3 +1,17 @@
+.cards-container > .default-content-wrapper {
+
+  a {
+    background-color: transparent;
+    color: #0066cc;
+    font-size: 14px;
+    padding: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+   
+}
+
+}
 .cards > ul {
   list-style: none;
   margin-top: 50px;
@@ -49,6 +63,7 @@
 .cards h3 {
   font-family: "sf pro regular" !important;
   font-family: normal;
+
   font-size: 28px !important;
 }
 .cards p {
@@ -62,9 +77,8 @@
   background-color: transparent;
   font-size: 13px;
   font-family: "sf pro regular" !important;
-  color: rgb(12, 144, 188) ;
+  color: rgb(12, 144, 188) !important;
 }
-
 .cards > ul > li {
   display: flex;
   font-family: normal;
@@ -82,15 +96,6 @@
 .cards .cards-card-body {
   padding: 10px 30px 20px 30px;
 }
-.cards-container > .default-content-wrapper {
-  a {
-    background-color: transparent;
-    color: #0066cc;
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 0;  
-}
-}
 @media(max-width:768px){
   
 .cards-card-image>p:first-child {
@@ -104,7 +109,12 @@
   .cards > ul > li {
     min-width: 40% !important;
   }
-  
+  .cards-container > .default-content-wrapper {
+    h2 {
+        font-size: 50px;
+        font-family: "San Francisco", sans-serif;
+       
+    }}
   .cards-card-image>p:last-child {
     display: none;
 }

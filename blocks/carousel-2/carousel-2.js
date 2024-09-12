@@ -11,7 +11,7 @@ export default function decorate(block) {
   const headings = document.querySelectorAll("h2");
 
   headings.forEach((heading) => {
-  
+    // Remove the 'id' attribute if it exists
     heading.removeAttribute("id");
 
 
@@ -38,10 +38,7 @@ export default function decorate(block) {
         const paragraph = div.querySelector("p");
 
       
-        const button = document.createElement("div");
-        button.className = "carousel-2-card-button";
-        button.textContent = "+";
-        li.append(button); 
+       
       }
     });
 

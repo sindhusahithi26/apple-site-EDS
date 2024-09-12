@@ -53,7 +53,17 @@ function buildAutoBlocks(main) {
     console.error('Auto Blocking failed', error);
   }
 }
+function autolinkModals(element) {
+  element.addEventListener('click', async (e) => {
+    const origin = e.target.closest('a');
 
+    if (origin && origin.href && origin.href.includes('/modals/')) {
+      e.preventDefault();
+      const { openModal } = await import(`${window.hlx.codeBasePath}/blocks/modal/modal.js`);
+      openModal(origin.href);
+    }
+  });
+}
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -99,6 +109,7 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
+  autolinkModals(doc);
   const main = doc.querySelector('main');
   await loadSections(main);
 

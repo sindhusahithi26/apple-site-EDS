@@ -11,7 +11,7 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
-/* Ensuring no margin shifts for text */
+
 footer p {
   margin: 0;
   font-size: 12px;
@@ -20,7 +20,7 @@ footer p {
   letter-spacing: -0.01em;
 }
 
-/* Removing negative margins to prevent shifts */
+
 .footer .section:nth-child(1) .default-content-wrapper p:nth-child(1),
 .footer .section:nth-child(1) .default-content-wrapper p:nth-child(4),
 .footer .section:nth-child(1) .default-content-wrapper p:nth-child(5),
@@ -56,7 +56,7 @@ footer .footer li {
   letter-spacing: -0.01em;
 }
 
-/* Explicit width and height to prevent shifts */
+
 .footer img {
   width: 15px;
   height: 15px;
